@@ -23,6 +23,9 @@ header{
     margin-right: auto;
     flex-direction: column;
 }
+hr{
+    display: none;
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -154,6 +157,10 @@ span.month{
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+}
+#info-p{
+    text-decoration: none;
+    color: black;
 }
 .card-button{
     background: #48B649;
@@ -380,6 +387,9 @@ span.month{
 footer{
     padding: 64px 0px;
 }
+#ham-burger{
+    display: none;
+}
 @media only screen and (max-width: 600px){
     .nav-lists{
         display: none;
@@ -429,10 +439,15 @@ footer{
     .info-content{
         font-size: 14px;
     }
-    /* .pricing-page{
+    .pricing-page{
         width: 100%;
-        max-width: 375px;
-    } */
+        display: flex;
+        justify-content: center;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
     .all-footer-cards{
         width: 100%;
         max-width: 375px;
@@ -454,12 +469,11 @@ footer{
         text-align: center;
     }
     .footer-info{
-        width: 100%;
-        max-width: 375px;
         padding: 24px 16px;
         display: flex;
         flex-direction: column;
         gap: 24px;
+        justify-content: center;
         align-items: center;
     }
     .footer-instructions{
@@ -473,6 +487,7 @@ footer{
         max-width: 343px;
         font-size: 28px;
         line-height: 130%;
+        text-align: center;
     }
     #info-bar-code{
         display: flex;
@@ -497,5 +512,8 @@ footer{
         flex-direction: column;
         align-items: center;
         
+    }
+    #ham-burger{
+        display: block;
     }
 }

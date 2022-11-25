@@ -216,7 +216,8 @@ header{
     line-height: 150%;
 }
 .card-footer-1{
-    width: 214px;
+    width: 100%;
+    max-width: 214px;
 }
 .details-svg{
     display: flex;
@@ -227,7 +228,6 @@ header{
     gap: 20px;
 }
 .info-p{
-    padding: 0px 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
@@ -286,6 +286,113 @@ header{
 }
 footer{
     padding: 64px 0px;
+}
+hr{
+    display: none;
+}
+#info-p{
+    text-decoration: none;
+    color: black;
+}
+#ham-burger{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .nav-lists{
+        display: none;
+    }
+    .log-in-get-started{
+        display: none;
+    }
+    .header-heading{
+        font-size: 36px;
+    }
+    .header-info{
+        font-size: 16px;
+    }
+    .header-info-second{
+        font-size: 18px;
+    }
+    .first-heading{
+        font-size: 26px;
+    }
+    .paragraph-one{
+        font-size: 12px;
+    }
+    .paragraph-two{
+        font-size: 12px;
+    }
+    .third-paragraph-two{
+        font-size: 12px;
+    }
+    .all-footer-cards{
+        width: 100%;
+        max-width: 375px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .footer-main-info{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .info-p{
+        border: transparent;
+        text-align: center;
+    }
+    .info-p-map{
+        border: transparent;
+        text-align: center;
+    }
+    .footer-info{
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-instructions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .instructions-heading{
+        width: 100%;
+        max-width: 343px;
+        font-size: 28px;
+        line-height: 130%;
+        text-align: center;
+    }
+    #info-bar-code{
+        display: flex;
+        width: 100%;
+        max-width: 100px;
+    }
+    .footer-copyright{
+        width: 100%;
+        max-width: 343px;
+        font-size: 14px;
+    }
+    hr{
+        width: 100%;
+        display: flex;
+        max-width: 14px;
+        place-items: center;
+        border: 0.2px solid;
+        background: black;
+    }
+    .footer-main-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    #ham-burger{
+        display: block;
+    }
 }
 
 
