@@ -472,4 +472,63 @@ hr{
         display: block;
     }
 }
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .nav-lists{
+        display: none;
+    }
+    .log-in-get-started{
+        display: none;
+    }
+    .header-heading{
+        font-size: 44px;
+    }
+    #ham-burger{
+        display: block;
+    }
+    .header-info{
+        font-size: 16px;
+    }
+    .header-info-second{
+        font-size: 16px;
+        width: 100%;
+        max-width: 516px;
+    }
+    header{
+        height: 380px;
+    }
+    .question-first{
+        font-size: 16px;
+        width: 100%;
+        max-width: 468px;
+    }
+    .career-question{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .provide-heading{
+        font-size: 30px;
+    }
+    .provide-paragraph{
+        font-size: 16px;
+        width: 100%;
+        max-width: 516px;
+    }
+    .all-footer-cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .instructions-heading{
+        font-size: 24px;
+
+    }
+    .instructions-paragraph{
+        font-size: 16px;
+    }
+    .footer-copyright{
+        font-size: 14px;
+    }
+}
 

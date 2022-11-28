@@ -216,6 +216,7 @@ body{
 .page-video-left-info{
     width: 100%;
     max-width: 175px;
+    /* max-width: 175px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -294,12 +295,15 @@ body{
 } */
 .concert-rx-detail-1{
     display: flex;
-    width: 100%;
-    max-width: 1225px;
     height: 627px;
     align-items: center;
     margin: 40px;
-    /* position: relative; */
+}
+.concert-rx-detail-2{
+    display: flex;
+    height: 627px;
+    align-items: center;
+    margin: 40px;
 }
 .container-1-svg-easy-work-flow{
     display: flex;
@@ -317,7 +321,22 @@ body{
 .detail-1-img{
     z-index: 1;
 }
+.detail-2-img{
+    position: relative;
+    right: 60px;
+}
 .detail-1-paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #52525B;
+    width: 100%;
+    max-width: 405px;
+}
+.detail-2-paragraph{
+    width: 100%;
+    max-width: 405px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -325,20 +344,26 @@ body{
     color: #52525B;
 }
 .detail-1-container{
+    height: 100%;
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    position: relative;
+    right: 60px;
+    border-radius: 8px;
+}
+.detail-2-container{
 
     height: 100%;
     background: #FAFAFA;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding-left: 60px;
-
     position: relative;
-    right: 60px;
     border-radius: 8px;
-
-    
 }
 .detail-1-heading{
     font-style: normal;
@@ -347,113 +372,7 @@ body{
     line-height: 120%;
     letter-spacing: -0.04em;
 }
-.concert-rx-detail-2{
-    display: flex;
-    width: 100%;
-    max-width: 1225px;
-    height: 627px;
-    align-items: center;
-    margin: 40px;
-    padding-left: 30px;
-    /* position: relative; */
-}
-.container-2-svg-easy-work-flow{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-    /* justify-content: center; */
-}
-.container-2-easy-work-flow{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 150%;
-    letter-spacing: -0.01em;
-}
-.detail-2-img{
-    position: relative;
-    right: 50px;
-}
-.detail-2-paragraph{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.01em;
-    color: #52525B;
-}
-.detail-2-container{
-    padding-left: 20px;
-    height: 100%;
-    background: #FAFAFA;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 8px;
-    padding-right: 60px;
-    
-}
-.detail-2-heading{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
-    letter-spacing: -0.04em;
-}
-.concert-rx-detail-3{
-    display: flex;
-    width: 100%;
-    max-width: 1225px;
-    height: 627px;
-    align-items: center;
-    margin: 40px;
-    /* position: relative; */
-}
-.container-3-svg-easy-work-flow{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-    /* justify-content: center; */
-}
-.container-3-easy-work-flow{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 150%;
-    letter-spacing: -0.01em;
-}
-.detail-3-img{
-    z-index: 1;
-}
-.detail-3-paragraph{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.01em;
-    color: #52525B;
-}
-.detail-3-container{
 
-    height: 100%;
-    background: #FAFAFA;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding-left: 60px;
-
-    position: relative;
-    right: 60px;
-    border-radius: 8px;
-
-    
-}
-.detail-3-heading{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 120%;
-    letter-spacing: -0.04em;
-}
 .trusted-svg-title{
     display: flex;
     flex-direction: column;
@@ -770,6 +689,10 @@ hr{
 footer{
     padding: 64px 0px;
 }
+#page-video{
+    width: 100%;
+    max-width: 842px;
+}
 @media only screen and (max-width: 600px){
     .product-page-v1{
         width: 100%;
@@ -867,7 +790,7 @@ footer{
     .all-cards{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        
         align-items: center;
         margin: 0%;
     }
@@ -893,15 +816,11 @@ footer{
         text-align: center;
     }
     .concert-rx-detail-2{
-        width: 343px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
-    .concert-rx-detail-3{
-        width: 343px;
-        display: flex;
-        flex-direction: column-reverse;
-    }
+    
     .container-1-svg-easy-work-flow{
         padding-right: 80px;
         padding-left: 80px;
@@ -961,6 +880,11 @@ footer{
       display: flex;
       align-items: center;
     }
+    #detail-2-img{
+        width: 343px;
+        display: flex;
+        align-items: center;
+      }
     .trusted-title{
         font-size: 12px;
     }
@@ -1046,10 +970,52 @@ footer{
     .footer-main-info{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        
+        align-items: center;        
     }
     #ham-burger{
         display: block;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: none;
+    }
+    .header-heading{
+        font-size: 44px;
+    }
+    #ham-burger{
+        display: block;
+    }
+    .header-info{
+        font-size: 16px;
+        width: 100%;
+        max-width: 343px;
+    }
+    .page-video-left-info{
+        display: none;
+    }
+    .page-video-right-info{
+        display: none;
+    }
+    .page-video-bottom-info{
+        display: none;
+    }
+    .all-footer-cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .instructions-heading{
+        font-size: 24px;
+
+    }
+    .instructions-paragraph{
+        font-size: 16px;
+    }
+    .footer-copyright{
+        font-size: 14px;
     }
 }

@@ -101,6 +101,7 @@ div.all-paragraphs>p{
     font-size: 14px;
     line-height: 150%;
     color: #52525B;
+    padding: 10px;
 }
 .footer-main{
     width: 100%;
@@ -314,5 +315,39 @@ hr{
     }
     #ham-burger{
         display: block;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .nav-lists{
+        display: none;
+    }
+    .log-in-get-started{
+        display: none;
+    }
+    .header-heading{
+        font-size: 44px;
+    }
+    #ham-burger{
+        display: block;
+    }
+    header{
+        height: 250px;
+    }
+    .all-footer-cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .instructions-heading{
+        font-size: 24px;
+
+    }
+    .instructions-paragraph{
+        font-size: 16px;
+    }
+    .footer-copyright{
+        font-size: 14px;
     }
 }

@@ -139,9 +139,7 @@ header{
 .second-paragraph{
     width: 100%;
     display: flex;
-    justify-content: end;
-   
-     
+    justify-content: end;   
 }
 .paragraph{
     
@@ -389,6 +387,93 @@ hr{
         flex-direction: column;
         align-items: center;
         
+    }
+    #ham-burger{
+        display: block;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .nav-lists{
+        display: none;
+    }
+    .log-in-get-started{
+        display: none;
+    }
+    .header-heading{
+        font-size: 44px;
+    }
+    .header-info{
+        font-size: 16px;
+        width: 100%;
+        max-width: 516px;
+    }
+    .header-info-second{
+        font-size: 18px;
+    }
+    .first-heading{
+        font-size: 24px;
+        width: 100%;
+        max-width: 154px;
+    }
+    
+    .third-heading{
+        font-size: 24px;
+        width: 100%;
+        max-width: 244px;
+    }
+    .paragraph-one{
+        font-size: 16px;
+        width: 100%;
+        max-width: 426px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-heading-paragraph{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .paragraph-two{
+        font-size: 16px;
+        width: 100%;
+        max-width: 426px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .third-paragraph-two{
+        font-size: 16px;
+        width: 100%;
+        max-width: 426px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* .paragraph{
+        margin: 0%;
+        width: 100%;
+        max-width: 426px;
+        display: flex;
+        margin-right: 180px;
+    } */
+    .all-footer-cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .instructions-heading{
+        font-size: 24px;
+
+    }
+    .instructions-paragraph{
+        font-size: 16px;
+    }
+    .footer-copyright{
+        font-size: 14px;
     }
     #ham-burger{
         display: block;

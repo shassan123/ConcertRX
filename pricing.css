@@ -517,3 +517,84 @@ footer{
         display: block;
     }
 }
+@media only screen and (min-width: 600px) and (max-width: 1000px){
+    .nav-lists{
+        display: none;
+    }
+    .log-in-get-started{
+        display: none;
+    }
+    .header-heading{
+        font-size: 44px;
+    }
+    #ham-burger{
+        display: block;
+    }
+    .header-info{
+        font-size: 16px;
+        width: 100%;
+        max-width: 343px;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-1{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 32px;
+    }
+    .header-heading{
+        font-size: 44px;
+    }
+    .header-info{
+        font-size: 16px;
+        width: 100%;
+        max-width: 516px;
+    }
+    .note{
+        width: 100%;
+        max-width: 516px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-left: 200px; */
+    }
+    .ask-questions-heading{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .ask-questions-info{
+        font-size: 16px;
+        
+    }
+    .note-details{
+        width: 100%;
+        max-width: 516px;
+    }
+    .user-info{
+        width: 100%;
+        max-width: 516px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .all-footer-cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .instructions-heading{
+        font-size: 24px;
+
+    }
+    .instructions-paragraph{
+        font-size: 16px;
+    }
+    .footer-copyright{
+        font-size: 14px;
+    }
+}
